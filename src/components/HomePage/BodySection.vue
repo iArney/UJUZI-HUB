@@ -21,7 +21,7 @@
       </span>
     </div>
     <div
-      class="container-fluid mt-5 row d-none d-sm-none d-md-flex align-items-center mx-auto text-center"
+      class="container-fluid mt-5 row w-75 mx-auto d-none d-sm-none d-md-flex align-items-center mx-auto text-center"
     >
       <div class="col">
         <global-links
@@ -97,7 +97,9 @@
       </div>
       <!-- skills cards -->
     </div>
-    <div class="row align-center container-fluid mt-5 position-relative">
+    <div
+      class="row align-center w-75 mx-auto container-fluid mt-5 position-relative"
+    >
       <div class="col">
         <skill-cards class="mx-sm-auto mx-auto" />
       </div>
@@ -170,12 +172,24 @@
       </div>
     </div>
     <!-- enroll cards ends -->
+    <div class="row w-50 align-items-center mx-auto">
+      <div class="col mt-5">
+        <price-cards class="mx-auto mt-5" />
+      </div>
+      <div class="col mt-5">
+        <price-cards class="mx-auto mt-5" />
+      </div>
+      <div class="col mt-5">
+        <price-cards class="mx-auto mt-5" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import GlobalLinks from "../GlobalComponents/GlobalLinks.vue";
 import EnrollCards from "../PageContents/EnrollCards.vue";
+import PriceCards from "../PageContents/PriceCards.vue";
 import SkillCards from "../PageContents/SkillCards.vue";
 export default {
   name: "BodySection",
@@ -183,6 +197,7 @@ export default {
     GlobalLinks,
     SkillCards,
     EnrollCards,
+    PriceCards,
   },
   data: () => ({
     link_name: String,
