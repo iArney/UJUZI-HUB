@@ -1,6 +1,6 @@
 <template>
   <div
-    class="body-section row align-items-center container-fluid position-relative"
+    class="body-section row w-75 mx-auto align-items-center container-fluid position-relative"
   >
     <div class="container d-inline col-7 d-none d-sm-none d-md-flex">
       <img
@@ -10,9 +10,9 @@
       />
     </div>
     <div
-      class="container d-inline col-9 align-self-center mt-5 w-sm-25 col-sm-9 col-lg-5 sm-text-center"
+      class="container d-inline col-9 align-self-center mt-1 w-sm-25 col-sm-9 col-lg-5 sm-text-center"
     >
-      <span class="fw-light w-100 mx-auto-5"
+      <span class="fw-light w-100"
         >A digital learning platform &#40;Masterclass&#41; aiming at delivering
         knowledge by using a short, simplified, and effective online courses
         from best instructors/practitioners through visuals, audios &#38; notes
@@ -21,7 +21,7 @@
       </span>
     </div>
     <div
-      class="container-fluid mt-5 row w-75 mx-auto d-none d-sm-none d-md-flex align-items-center mx-auto text-center"
+      class="container-fluid mt-5 row mx-auto d-none d-sm-none d-md-flex align-items-center mx-auto text-center"
     >
       <div class="col">
         <global-links
@@ -97,22 +97,20 @@
       </div>
       <!-- skills cards -->
     </div>
-    <div
-      class="row align-center w-75 mx-auto container-fluid mt-5 position-relative"
-    >
-      <div class="col">
-        <skill-cards class="mx-sm-auto mx-auto" />
-      </div>
-      <div class="col">
-        <skill-cards class="mx-sm-auto mx-auto" />
-      </div>
-      <div class="col">
-        <skill-cards class="mx-sm-auto mx-auto" />
-      </div>
-      <!-- <div class="col">
+
+    <div class="col">
+      <skill-cards class="mx-auto" />
+    </div>
+    <div class="col">
+      <skill-cards class="mx-auto" />
+    </div>
+    <div class="col">
+      <skill-cards class="mx-auto" />
+    </div>
+    <!-- <div class="col">
           <skill-cards class="mx-auto w-75" />
         </div> -->
-    </div>
+
     <!-- skills card ends -->
     <!-- </div> -->
     <div class="col-12 text-center mt-1 mb-5 fs-2">
@@ -121,67 +119,84 @@
       </span>
     </div>
     <!-- enroll cards starts -->
-    <div class="mt-5 row align-items-center">
-      <div class="col-12 mx-5">
+    <div class="price-container mt-5 row align-items-center">
+      <div class="col-12">
         <h3>Latest Courses</h3>
       </div>
       <div class="col">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
       <div class="col">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
       <div class="col">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
       <div class="col">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
     </div>
     <!-- enroll cards contd.. -->
-    <div class="mt-5 row align-items-center ml-5">
+    <div class="price-container mt-5 row align-items-center ml-5">
       <div class="col col-xs-5">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
       <div class="col col-xs-5">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
       <div class="col col-xs-5">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
-      <div class="col col-xs-5">
-        <enroll-cards class="mx-auto shadow-lg" />
+      <div class="col col-xs-5 d-none d-sm-none d-md-flex">
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
     </div>
 
-    <div class="mt-5 row align-items-center ml-5">
-      <div class="col-12 mx-5">
+    <div class="price-container mt-5 row align-items-center ml-5">
+      <div class="col-12">
         <h3>Top Courses</h3>
       </div>
       <div class="col col-xs-5">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
       <div class="col col-xs-5">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
       <div class="col col-xs-5">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
       <div class="col col-xs-5">
-        <enroll-cards class="mx-auto shadow-lg" />
+        <enroll-cards class="p-c mx-auto shadow-lg" />
       </div>
     </div>
     <!-- enroll cards ends -->
-    <div class="row w-50 align-items-center mx-auto">
-      <div class="col mt-5">
-        <price-cards class="mx-auto mt-5" />
+    <div class="price-container row mt-5 align-items-center">
+      <div class="col-12 mt-5 text-center">
+        <h3>Choose your plan</h3>
+        <p>
+          Upgrade to enjoy unlimited access to different plans. <br />
+          Access video trainings from experienced professionals with detailed
+          and stepwise instructions.
+        </p>
       </div>
-      <div class="col mt-5">
-        <price-cards class="mx-auto mt-5" />
+      <div class="col">
+        <price-cards class="p-c mx-auto mt-5" />
       </div>
-      <div class="col mt-5">
-        <price-cards class="mx-auto mt-5" />
+      <div class="col">
+        <price-cards class="p-c mx-auto mt-5" />
       </div>
+      <div class="col">
+        <price-cards class="p-c mx-auto mt-5" />
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <!-- team -->
+  <div class="row mt-5">
+    <div class="price-container row mt-5 align-items-center">
+      <team-cards />
+      <div class="col"></div>
     </div>
   </div>
 </template>
@@ -191,6 +206,7 @@ import GlobalLinks from "../GlobalComponents/GlobalLinks.vue";
 import EnrollCards from "../PageContents/EnrollCards.vue";
 import PriceCards from "../PageContents/PriceCards.vue";
 import SkillCards from "../PageContents/SkillCards.vue";
+import TeamCards from "../PageContents/TeamCards.vue";
 export default {
   name: "BodySection",
   components: {
@@ -198,14 +214,39 @@ export default {
     SkillCards,
     EnrollCards,
     PriceCards,
+    TeamCards,
   },
-  data: () => ({
-    link_name: String,
-  }),
+  data: function () {
+    return {
+      link_name: String,
+    };
+  },
 };
 </script>
 
 <style scoped>
+@media (min-width: 400px) and (max-width: 650px) {
+  .price-container {
+    position: relative;
+  }
+  .p-c {
+    display: block;
+    position: relative;
+    left: -1rem;
+    width: 1000px;
+  }
+}
+@media (min-width: 300px) and (max-width: 398px) {
+  .price-container {
+    position: relative;
+  }
+  .p-c {
+    display: block;
+    position: relative;
+    left: -2.6rem;
+    width: 1000px;
+  }
+}
 .body-section {
   background: url("@/assets/background_n.webp");
 }

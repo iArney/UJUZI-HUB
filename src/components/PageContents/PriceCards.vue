@@ -14,11 +14,13 @@
         </ul>
       </span>
     </div>
-    <reuse-button
-      class="mb-3 mx-auto"
-      btn_name="Create account"
-      style="background-color: #3fa5c0; color: white"
-    />
+    <div class="text-center">
+      <reuse-button
+        class="mb-3 mx-auto"
+        btn_name="Create account"
+        style="background-color: #3fa5c0; color: white"
+      />
+    </div>
   </div>
 </template>
 

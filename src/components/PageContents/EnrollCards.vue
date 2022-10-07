@@ -1,5 +1,5 @@
 <template>
-  <div class="HoverDiv card" style="width: 18rem">
+  <div class="HoverDiv card" style="width: 20rem">
     <img src="@/assets/capentry.jpg" class="card-img" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
